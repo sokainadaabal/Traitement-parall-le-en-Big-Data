@@ -1,8 +1,11 @@
 # Activité pratique N° 1 : Event Driven Architecture
 ## Partie 1 : Kafka 
-La première partie de notre activité pratique portait sur la compréhension de Kafka, une plateforme de streaming distribuée, ainsi que sur les étapes d'installation de Kafka sur un système Windows. En mettant en évidence la configuration des fichiers et le lancement des services nécessaires.
+La première partie de notre activité pratique portait sur la compréhension de Kafka, une plateforme de streaming distribuée, ainsi que sur les étapes d'installation de Kafka sur un système Windows. 
+En mettant en évidence la configuration des fichiers et le lancement des services nécessaires.
 ### Kafka : Qu'est-ce que c'est ?
-Kafka est une plateforme de streaming distribuée largement utilisée dans les systèmes Unix, bien qu'elle soit également compatible avec Windows. Il est conçu pour gérer efficacement le traitement des données en temps réel à grande échelle. Cette technologie est essentielle pour les architectures orientées événements, car elle permet de collecter, stocker et distribuer des flux de données en temps réel de manière fiable.
+Kafka est une plateforme de streaming distribuée largement utilisée dans les systèmes Unix, bien qu'elle soit également compatible avec Windows. 
+Il est conçu pour gérer efficacement le traitement des données en temps réel à grande échelle. 
+Cette technologie est essentielle pour les architectures orientées événements, car elle permet de collecter, stocker et distribuer des flux de données en temps réel de manière fiable.
 ### Installation de Kafka sur Windows et son lancement
 Pour commencer à utiliser Kafka sur Windows, nous avons suivi les étapes d'installation suivantes :
 
@@ -22,12 +25,16 @@ Pour commencer à utiliser Kafka sur Windows, nous avons suivi les étapes d'ins
    ```shell
      bin\windows\zookeeper-server-start.bat config\zookeeper.properties
    ```
-   ![Alt text](imgs/image.png)
-7. Démarrage du serveur Kafka : Enfin, nous avons ouvert une autre fenêtre de l'invite de commande pour lancer le serveur Kafka en exécutant la commande suivante :
+
+![Alt text](imgs/image.png)
+
+8. Démarrage du serveur Kafka : Enfin, nous avons ouvert une autre fenêtre de l'invite de commande pour lancer le serveur Kafka en exécutant la commande suivante :
    ```shell
       bin\windows\kafka-server-start.bat config\server.properties
    ```
-   ![img.png](imgs/img.png)
+   
+![img.png](imgs/img.png)
+
 ### Test de Kafka avec Kafka-console-producer et kafka-console-consumer
 Nous avons exploré comment tester Kafka en utilisant les outils kafka-console-producer et kafka-console-consumer. Ces outils nous permettent d'envoyer et de recevoir des messages depuis un topic Kafka.
 Pour cela, nous avons suivi ces étapes :
@@ -38,7 +45,6 @@ Pour cela, nous avons suivi ces étapes :
    bin\windows\kafka-console-producer.bat --broker-list localhost:9092 --topic test-topic
    ```
    Cette commande a ouvert un shell interactif où nous pouvions saisir des messages à envoyer au topic.
-
 4. Exécution du consommateur Kafka : Dans la deuxième fenêtre de l'invite de commande, nous avons exécuté le consommateur Kafka en utilisant la commande kafka-console-consumer. Nous avons également spécifié le serveur et le topic que nous souhaitions consommer. Par exemple, pour consommer des messages du "test-topic" depuis le début, nous avons utilisé la commande suivante :
    ```shell
    bin\windows\kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test-topic --from-beginning
@@ -50,7 +56,8 @@ Pour cela, nous avons suivi ces étapes :
 ![image de producteur et consumer](imgs/image_1.png)
 
 ## Partie 2 : Docker
-Dans cette partie de notre activité pratique, nous avons exploré le processus d'installation de Docker sur un système Windows. Docker est une technologie de conteneurisation qui permet de créer, gérer et exécuter des conteneurs légers pour l'isolation d'applications.
+Dans cette partie de notre activité pratique, nous avons exploré le processus d'installation de Docker sur un système Windows. 
+Docker est une technologie de conteneurisation qui permet de créer, gérer et exécuter des conteneurs légers pour l'isolation d'applications.
 ### Installation de docker dans Windows
 1. Accès au site de Docker : Pour commencer, nous avons visité le site officiel de Docker à l'adresse suivante : https://docs.docker.com/desktop/install/windows-install/. C'est sur ce site que nous avons téléchargé la version Desktop de Docker, adaptée à Windows.
 2. Téléchargement et installation : Après avoir téléchargé le programme d'installation de Docker Desktop, nous avons ouvert PowerShell et nous nous sommes déplacés vers le répertoire où se trouvait le fichier. Ensuite, nous avons lancé la commande suivante pour exécuter l'installation :
@@ -63,7 +70,9 @@ Dans cette partie de notre activité pratique, nous avons exploré le processus 
 5. Docker Desktop est un outil puissant qui permet de créer et de gérer des conteneurs Docker sur un système Windows, ce qui est essentiel pour l'orchestration d'applications basées sur des conteneurs.
 ### building a Java client application for Kafka
 Dans cette partie de notre activité pratique, nous avons suivi le guide disponible à l'adresse https://developer.confluent.io/quickstart/kafka-local/ pour créer une application cliente Java pour Kafka. 
+
 ![img.png](imgs/img_11.png)
+
 Les étapes comprenaient la création d'un projet avec Gradle, l'utilisation de Java 18, la mise en place d'un fichier docker-compose.yml, le déploiement de conteneurs Docker, et enfin, la création d'un producteur et d'un consommateur pour interagir avec Kafka.
    - fichier ``docker-compose.yml`` :
       ```yaml
@@ -92,11 +101,17 @@ Les étapes comprenaient la création d'un projet avec Gradle, l'utilisation de 
             CLUSTER_ID: MkU3OEVBNTcwNTJENDM2Qk
       ```
    - Compiler et démarrer l'environnement :
-     ![img_1.png](imgs/img_1.png)
+
+![img_1.png](imgs/img_1.png)
+     
    - Container crée :
+
 ![img_2.png](imgs/img_2.png)
-   - Broker
+
+   - Broker :
+
 ![img_4.png](imgs/img_4.png)
+
    - create a file configuration et ensuivre le reste des étapes 
    - Démarrer les conteneurs docker : zookeeper et kafka-broker
    - creation de topic 
@@ -108,19 +123,25 @@ Les étapes comprenaient la création d'un projet avec Gradle, l'utilisation de 
         --replication-factor 1 \
         --partitions 1
      ```
+     
 ![img_5.png](imgs/img_5.png)
+
    - Creation de producer et customer class
    - Tester avec Kafka-console-producer et kafka-console-consumer
      - Build
       ```shell
         gradle build
       ```
-![img_6.png](imgs/img_6.png)
+      
+      ![img_6.png](imgs/img_6.png)
+     
      - creation de repertoir jar 
       ```shell
         gradle shadowJar
       ```
-![img_7.png](imgs/img_7.png)
+
+     ![img_7.png](imgs/img_7.png)
+     
      - Produce et consume 
       ```shell
        java -cp build/libs/kafka-java-getting-started-0.0.1.jar org.example.ProducerExample getting-started.properties
@@ -149,7 +170,7 @@ Notre projet besoin les dependances suivantes :
 - Spring for Apache kafka Streams.
 - Cloud Stream
 
-![img_10.png](imgs/img_12.png)
+![img_10.png](imgs/img_12.PNG)
 
 #### 3.1.2 Creation de PageEvent et PageEventRestController
 - ```PageEvent``` : une classe qui représente les événements d'une page (nom, utilisateur, date, durée)..
