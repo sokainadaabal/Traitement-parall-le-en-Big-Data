@@ -215,7 +215,7 @@ On lance le projet et on vérifie si le topic R2 reçoit les événements.
 
 ![img_16.png](imgs/img_16.PNG)
 
-#### 3.4 Modification des événements produit par pageEventSupplier
+#### 3.3.1 Modification des événements produit par pageEventSupplier
 
 Dans la classe `PageEventService`, la fonction suivante sera `Function<PageEvent, PageEvent> pageEventPageFunction()`. Cette fonction consommera les événements de pages produits par la fonction `pageEventSupplier`, modifiera le nom de la page et le nom de l'utilisateur, puis les enverra vers le topic 4.
 Pour configurer cela dans le fichier de propriétés, nous pouvons ajouter les configurations suivantes :
