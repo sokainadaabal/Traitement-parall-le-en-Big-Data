@@ -1,0 +1,24 @@
+<div class="container">
+  <table class="table m-4 text-lg-center" *ngIf="!(bills._embedded.bills==0)">
+    <thead>
+    <tr>
+      <th>ID</th>
+      <th>Date of Billing</th>
+      <th>Customer ID</th>
+      <th>Action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let b of bills._embedded.bills">
+      <td>{{b.id}}</td>
+      <td>{{b.billingDate}}</td>
+      <td>{{b.customerID}}</td>
+      <td> <button class="btn btn-success" (click)="getOrderDetails(b)">Details</button></td>
+    </tr>
+    </tbody>
+  </table>
+  <div *ngIf="bills._embedded.bills==0" class="text-lg-center m-4">
+    <pre class="text-danger"> Aucune commande fait  pour l'afficher </pre>
+  </div>
+</div>
+

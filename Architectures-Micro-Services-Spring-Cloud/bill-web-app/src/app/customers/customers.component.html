@@ -1,0 +1,25 @@
+<div class="container">
+  <table class="table text-lg-center m-4" *ngIf="customers">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let customer of customers._embedded.customers">
+          <td>{{customer.id}}</td>
+          <td>{{customer.name}}</td>
+          <td>{{customer.email}}</td>
+          <td>
+            <button class="btn btn-success" (click)="getOrders(customer)">Orders</button>
+          </td>
+        </tr>
+    </tbody>
+  </table>
+  <div *ngIf="!customers" class="text-lg-center m-4">
+    <pre class="text-danger">Aucun client existe dans ce site.</pre>
+  </div>
+</div>
