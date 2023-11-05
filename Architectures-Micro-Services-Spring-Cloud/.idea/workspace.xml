@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="23420a35-1a34-4529-ab90-f83898622378" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/.idea/Architectures-Micro-Services.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/config-servie/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/config-servie/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/config-servie/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/config-servie/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/config-servie/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/config-servie/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/config-servie/src/main/java/org/sid/configservie/ConfigServieApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/config-servie/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/config-servie/src/test/java/org/sid/configservie/ConfigServieApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/customer-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/customer-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/customer-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/customer-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/customer-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/customer-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/customer-service/src/main/java/org/sid/customerservice/CustomerServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/customer-service/src/main/java/org/sid/customerservice/entities/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/customer-service/src/main/java/org/sid/customerservice/repositories/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/customer-service/src/main/java/org/sid/customerservice/web/CustomerRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/customer-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/customer-service/src/test/java/org/sid/customerservice/CustomerServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/customer-service-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/customer-service-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/customer-service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/gateway-service-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/gateway-service-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/gateway-service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/inventor-service-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/inventor-service-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/inventor-service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/order-service-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/order-service-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/config-repo/order-service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/ecom-enset/ecom-enset.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/gateway-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/gateway-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/gateway-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/gateway-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/gateway-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/gateway-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/gateway-service/src/main/java/org/sid/gatewayservice/GatewayServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/gateway-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/gateway-service/src/test/java/org/sid/gatewayservice/GatewayServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/inventor-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/inventor-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/inventor-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/inventor-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/inventor-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/inventor-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/inventor-service/src/main/java/org/sid/inventorservice/InventorServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/inventor-service/src/main/java/org/sid/inventorservice/entities/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/inventor-service/src/main/java/org/sid/inventorservice/repositories/ProductRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/inventor-service/src/main/java/org/sid/inventorservice/web/ProductRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/inventor-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/inventor-service/src/test/java/org/sid/inventorservice/InventorServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/main/java/org/sid/orderservice/OrderRestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/main/java/org/sid/orderservice/OrderServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/main/java/org/sid/orderservice/entities/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/main/java/org/sid/orderservice/entities/ProductItems.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/main/java/org/sid/orderservice/enums/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/main/java/org/sid/orderservice/models/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/main/java/org/sid/orderservice/models/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/main/java/org/sid/orderservice/repositories/OrderRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/main/java/org/sid/orderservice/repositories/ProductItemRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/main/java/org/sid/orderservice/services/CustomerRestClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/main/java/org/sid/orderservice/services/InventoryRestClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Architectures-Micro-Services/order-service/src/test/java/org/sid/orderservice/OrderServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/src/main/java/org/sid/billingservice/BillingServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/BillingServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/src/main/java/org/sid/billingservice/entities/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/entities/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/src/main/java/org/sid/billingservice/entities/ProductItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/entities/ProductItem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/src/main/java/org/sid/billingservice/feign/CustomerRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/feign/CustomerRestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/src/main/java/org/sid/billingservice/feign/ProductItemRestClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/feign/ProductItemRestClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/src/main/java/org/sid/billingservice/models/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/models/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/src/main/java/org/sid/billingservice/models/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/models/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/src/main/java/org/sid/billingservice/repository/BillRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/repository/BillRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/src/main/java/org/sid/billingservice/repository/ProductItemRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/repository/ProductItemRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/src/main/java/org/sid/billingservice/web/BillingRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/web/BillingRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/billingService/src/test/java/org/sid/billingservice/BillingServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/src/test/java/org/sid/billingservice/BillingServiceApplicationTests.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2XUFAVAJUQCnkLTMYxxnnEohzjG" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "Project-Micro-Services",
+    "jdk.selected.JAVA_MODULE": "17",
+    "last_opened_file_path": "C:/Users/Daabal Sokaina/Documents/GitHub/Traitement-parallele-en-Big-Data/Architectures-Micro-Services-Spring-Cloud/inventory-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.BillingServiceApplication">
+    <configuration name="BillingServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="billing-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.billingservice.BillingServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="customer-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.customerservice.CustomerServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EurekaDiscoveryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="eureka-discovery" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.sid.eurekadiscovery.EurekaDiscoveryApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GetewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="geteway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.geteway.GetewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="inventory-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.inventoryservice.InventoryServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="23420a35-1a34-4529-ab90-f83898622378" name="Changes" comment="" />
+      <created>1698675608012</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1698675608012</updated>
+      <workItem from="1698675609089" duration="219000" />
+      <workItem from="1698780669596" duration="670000" />
+      <workItem from="1699129207106" duration="3863000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Architectures_Micro_Services_Spring_Cloud$BillingServiceApplication.ic" NAME="BillingServiceApplication Coverage Results" MODIFIED="1699130102013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+  </component>
+</project>
