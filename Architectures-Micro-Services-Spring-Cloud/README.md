@@ -134,6 +134,7 @@ a ce stade en peut accede a customer-service et inventory-service via la gateway
 Eureka est un serveur d'enregistrement et de découverte de services couramment utilisé en conjonction avec Spring Boot pour la création de microservices. Il permet aux microservices de se trouver et de communiquer entre eux dans un environnement dynamique et évolutif.
 Pour l'utiliser, nous avons ajouté au projet la dependencies suivant :
 - Eureka Discovery Server.
+
 Dans le fichier ```EurekaDiscoveryApplication,java```, nous avons ajouter l'annotation suivante : @EnableEurekaServer
 De meme logique, nous avons configuré le fichier ```application.properties``` :
 ```properties
