@@ -5,26 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="23420a35-1a34-4529-ab90-f83898622378" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/billing-service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/BillingServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/entities/Bill.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/entities/ProductItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/feign/CustomerRestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/feign/ProductItemRestClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/models/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/models/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/repository/BillRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/repository/ProductItemRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/java/org/sid/billingservice/web/BillingRestController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/billing-service/src/test/java/org/sid/billingservice/BillingServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/billing-service/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/billing-service/.idea/misc.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,7 +116,7 @@
       <workItem from="1698780669596" duration="670000" />
       <workItem from="1699129207106" duration="4593000" />
       <workItem from="1699228467991" duration="1844000" />
-      <workItem from="1699279588816" duration="7998000" />
+      <workItem from="1699279588816" duration="9885000" />
     </task>
     <servers />
   </component>
