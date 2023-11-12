@@ -5,7 +5,11 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
+
 <> 2023-11-12T224936.200.json
+
+<> 2023-10-30T002847.200.json
+
 
 ###
 
@@ -15,6 +19,7 @@ Content-Length: 0
 Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
+
 
 <> 2023-11-12T210234.200.json
 
@@ -22,11 +27,8 @@ Accept-Encoding: br,deflate,gzip,x-gzip
 
 GET http://localhost:8081/actuator/refresh
 Accept: application/json
-Connection: Keep-Alive
-User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
-Accept-Encoding: br,deflate,gzip,x-gzip
 
-<> 2023-11-12T210233.405.json
+<> 2023-10-30T002606.200.json
 
 ###
 
@@ -37,7 +39,61 @@ Connection: Keep-Alive
 User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
 Accept-Encoding: br,deflate,gzip,x-gzip
 
+
+<> 2023-11-12T210233.405.json
+
+<> 2023-10-30T002417.404.json
+
+
+###
+
+POST http://localhost:8081/actuator/refresh
+Accept: application/json
+
+<> 2023-10-30T002149.404.json:
+<> 2023-10-30T002132.404.json:
+<> 2023-10-30T002000.404.json:
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-30T002323.400.html
+
+###
+
+POST http://localhost:8081/actuator/refresh
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-30T002149.404.json
+
+###
+
+POST http://localhost:8081/actuator/refresh
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-10-30T002132.404.json
+
+###
+
+POST http://localhost:8081/actuator/refresh
+
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+
 <> 2023-11-12T165138.200.json
+
+<> 2023-10-30T002000.404.json
+
 
 ###
 

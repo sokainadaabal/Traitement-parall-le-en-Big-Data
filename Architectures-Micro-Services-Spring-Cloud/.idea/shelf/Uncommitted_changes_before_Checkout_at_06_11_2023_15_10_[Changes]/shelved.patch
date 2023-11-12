@@ -1,0 +1,67 @@
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># Activité pratique N°2 : Architectures Micro-services avec Spring cloud\r\n\r\n## test Partie Client ( Angular )\r\n\r\nhttps://github.com/sokainadaabal/Traitement-parallele-en-Big-Data/assets/48890714/547d00fe-82dd-4539-bb44-8e20614e9c2d\r\n\r\n
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	
++++ b/README.md	
+@@ -1,6 +1,57 @@
+ # Activité pratique N°2 : Architectures Micro-services avec Spring cloud
+ 
+-## test Partie Client ( Angular )
++## Première partie : (Customer-Service, Inventory-Service, Spring Cloud Gateway, Eureka Discovery)
++   Pour la realisation de ces microservices, nous avons besoins des dependances : 
++    - Lombok 
++    - DevTools
++    - Spring Web
++    - Spring Data JPA
++    - h2 Database
++    - Eureka Discovery
++    - Spring Boot Actuator
++### Premiere Micro-service : Customer
++Pour la creation de notre micro service customer-service, nous avons creer les composants suivants:
++     - Entities : Customer.java.
++     - Repositories : CustomerRepository.java.
++Nous avons configuré le service dans le fichier ```applications.properties``` avec le nom et le port de service :
++```properties
++server.port=8081
++spring.application.name=customer-server
++spring.datasource.url=jdbc:h2:mem:customer-db
++spring.cloud.discovery.enabled=true
++```
++Pour tester le bon fonctionnement de notre service, nous avons ajoute dans le fichier ```CustomerServiceApplication.java``` function star pour ajouter des clients :
++
++```java
++
++```
++
++test de service :
++
++### Deuxième Micro-service : Inventory
++Avec la meme logique, nous avons ajouté deux composants dans ce service :
++    - Entities : Product.java.
++    - Repositories : ProductRepository.java.
++Nous avons configuré le service dans le fichier ```applications.properties``` avec le nom et le port de service :
++```properties
++
++```
++Pour tester le bon fonctionnement de notre service, nous avons ajoute dans le fichier ```CustomerServiceApplication.java``` function star pour ajouter des clients :
++
++```java
++
++```
++
++test de service :
++### Spring Cloud Gateway
++### Eureka Discovery
++
++## Deuxième Partie : Billing Service avec Open Feign Rest Client
++
++## Troisième Partie : Créer un Client Angular
++Nous avons cree un nouveau projet Angular.
++
++## Test Partie Client (Angular)
+ 
+ https://github.com/sokainadaabal/Traitement-parallele-en-Big-Data/assets/48890714/547d00fe-82dd-4539-bb44-8e20614e9c2d
+ 
