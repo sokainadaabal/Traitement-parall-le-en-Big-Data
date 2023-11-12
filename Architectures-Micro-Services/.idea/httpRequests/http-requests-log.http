@@ -1,0 +1,43 @@
+POST http://localhost:8081/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-12T224936.200.json
+
+###
+
+POST http://localhost:8081/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-12T210234.200.json
+
+###
+
+GET http://localhost:8081/actuator/refresh
+Accept: application/json
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-12T210233.405.json
+
+###
+
+POST http://localhost:8081/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-12T165138.200.json
+
+###
+
