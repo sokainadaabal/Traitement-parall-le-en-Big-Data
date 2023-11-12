@@ -4,6 +4,30 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+
+    <list default="true" id="22f8991e-2e5b-406e-84b1-25f47e9bf6c1" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/customer-service-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/customer-service-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/customer-service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/gateway-service-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/gateway-service-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/gateway-service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/inventory-service-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/inventory-service-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/inventory-service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/order-service-dev.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/order-service-prod.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config-repo/order-service.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/org/sid/customerservice/entities/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/org/sid/customerservice/entities/CustomerProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/org/sid/customerservice/repositories/CustomerRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/customer-service/src/main/java/org/sid/customerservice/web/CustomerConfigTestController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/sid/inventoryservice/entities/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/sid/inventoryservice/entities/ProductProjection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inventory-service/src/main/java/org/sid/inventoryservice/repositories/ProductRepository.java" afterDir="false" />
+    </list>
     <list default="true" id="e43d4e8d-20d5-48ff-a4e4-7daf9cd6e0d1" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/Architectures-Micro-Services.iml" afterDir="false" />
@@ -87,6 +111,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Class" />
+        <option value="Interface" />
         <option value="Enum" />
         <option value="Interface" />
         <option value="Class" />
@@ -95,10 +121,23 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="Use Maven wrapper" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2XoPrC7AnVtVQPBdvOWKJrlq3Zi" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -107,6 +146,55 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Project-Micro-Services&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Daabal Sokaina/Documents/GitHub/Traitement-parallele-en-Big-Data/Architectures-Micro-Services/config-repo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.16894531&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Daabal Sokaina\Documents\GitHub\Traitement-parallele-en-Big-Data\Architectures-Micro-Services\config-repo" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.InventoryServiceApplication">
+    <configuration name="rest-api_1 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_1.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="rest-api_2 | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/rest-api_2.http" requestIdentifier="#1" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.configservice.ConfigServiceApplication" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RequestMappingsPanelOrder0": "0",
@@ -161,11 +249,15 @@
     <configuration name="ConfigServieApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="config-servie" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.configservie.ConfigServieApplication" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="CustomerServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+
       <module name="customer-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.customerservice.CustomerServiceApplication" />
       <method v="2">
@@ -179,14 +271,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+
+    <configuration name="InventoryServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="inventory-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.inventoryservice.InventoryServiceApplication" />
+
     <configuration name="InventorServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="inventor-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.inventorservice.InventorServiceApplication" />
+
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="OrderServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+
       <module name="order-service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.sid.orderservice.OrderServiceApplication" />
       <method v="2">
@@ -195,14 +297,29 @@
     </configuration>
     <recent_temporary>
       <list>
+
+        <item itemvalue="HTTP Request.rest-api_2 | #1" />
+        <item itemvalue="HTTP Request.rest-api_1 | #1" />
+
         <item itemvalue="HTTP Request.rest-api | #1" />
         <item itemvalue="HTTP Request.All in rest-api" />
+
       </list>
     </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+
+      <changelist id="22f8991e-2e5b-406e-84b1-25f47e9bf6c1" name="Changes" comment="" />
+      <created>1699292655652</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699292655652</updated>
+      <workItem from="1699292656718" duration="909000" />
+      <workItem from="1699791008108" duration="17810000" />
+      <workItem from="1699820201186" duration="4529000" />
+
       <changelist id="e43d4e8d-20d5-48ff-a4e4-7daf9cd6e0d1" name="Changes" comment="" />
       <created>1698613769715</created>
       <option name="number" value="Default" />
@@ -210,6 +327,7 @@
       <updated>1698613769715</updated>
       <workItem from="1698613770823" duration="23911000" />
       <workItem from="1698675355899" duration="234000" />
+
     </task>
     <servers />
   </component>
