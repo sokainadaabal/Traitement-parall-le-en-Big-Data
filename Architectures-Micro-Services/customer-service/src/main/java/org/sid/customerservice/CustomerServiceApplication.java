@@ -11,7 +11,6 @@ import org.springframework.context.annotation.Bean;
 import java.util.List;
 
 @SpringBootApplication
-
 @RefreshScope
 // une fois un commit fait dans le repositories, En revoit une requete de type post via actuactor.
 // Requete : POST localhost:8081/actuator/refresh
