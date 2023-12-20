@@ -1,3 +1,14 @@
+POST http://localhost:8084/actuator/refresh
+Accept: application/json
+Content-Length: 0
+Connection: Keep-Alive
+User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.8)
+Accept-Encoding: br,deflate,gzip,x-gzip
+
+<> 2023-11-23T225550.200.json
+
+###
+
 POST http://localhost:8081/actuator/refresh
 Accept: application/json
 Content-Length: 0

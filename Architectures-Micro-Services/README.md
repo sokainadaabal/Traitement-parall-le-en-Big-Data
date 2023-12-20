@@ -192,7 +192,7 @@ Une fois, nous lançons notre micro-service, il s'enregistre dans consule :
 ![img_12](img/img_12.PNG)
 Pour tester le bon fuctionement de ce micro-service, nous tapons ce url http://localhost:9999/inventory-service/products:
 ![img_13](img/img_13.PNG)
-Id de produit, un element important pour la logique du micro-service, pour afficher nous utilison une projetction 
+Id de produit, un element important pour la logique du micro-service, pour afficher nous utilison une projection 
 ```java
 @Projection(name = "fullProduct",types = Product.class)
 public interface ProductProjection  {
@@ -214,7 +214,6 @@ public interface ProductProjection  {
 - consul Discovery
 - Config client
 - Spring Boot Actuator
-
 ## Gateway Service
 ### Dependence 
 - Consul Discovery
@@ -261,3 +260,33 @@ Pour acceder a l'interface graphique de consul : http://localhost:8500/ui/dc1/se
 ![img_2](img/img_2.PNG)
 
 
+## Vault 
+
+```shell
+vault server -dev
+```
+```shell
+set VAULT_ADDR=http://127.0.0.1:8200
+```
+
+ajouter un key-value au vault 
+
+```shell
+vault kv put secret/billing-service user.username=sokaina  user.password=123456
+```
+
+retenir le detail met dans un dossier dans vault
+
+```shell
+vault kv get secret/billing-service
+```
+
+pour chercher les configrations depuis un micro-services vers vault, il faut ajouter des configurations dans le fichier `application.properties`:
+```properties
+spring.cloud.vault.token= hvs.Zy6uyQ6Ozs8PYxSUoVxu49N4
+spring.cloud.vault.scheme=http
+spring.cloud.vault.kv.enabled=true
+
+
+spring.config.import=optional:consul:,vault://
+```
