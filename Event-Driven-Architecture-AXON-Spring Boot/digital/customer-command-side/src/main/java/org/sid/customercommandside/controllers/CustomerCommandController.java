@@ -19,7 +19,6 @@ import java.util.stream.Stream;
 @Slf4j
 @RequestMapping("/customers/commands")
 public class CustomerCommandController {
-
     private CommandGateway commandGateway;
     private EventStore eventStore;
     @PostMapping(path = "/create")
@@ -30,10 +29,8 @@ public class CustomerCommandController {
                 requestDTO.getEmail()
         ));
     }
-
     @GetMapping("/eventStore/{customerId}")
     public Stream eventStore(@PathVariable String customerId){
         return eventStore.readEvents(customerId).asStream();
     }
-
 }
