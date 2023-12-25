@@ -107,3 +107,202 @@ Ongle ``credentials`` s'ajoute automatiquement et un client secret ce genre auss
 ![test_auth](imgs/img21.JPG)
 
 ## Partie 2 : Sécuriser avec Keycloak les applications Wallet App
+Apres avoir cloné les deux projets e-bank service et wallet service. Nous avons démarré les deux micro-services.
+
+![micro-service](imgs/img22.JPG)
+
+Puis, on peut consulter `http://localhost:8084/currencyDeposits` si tout marche bien, on obtient les donnes sous forme json
+
+![test_micro-service](imgs/img23.JPG)
+
+Pour security les micro-services, nous avons besoin deux dependencies, nous avons ajouté dans e-banck :
+```xml
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.keycloak</groupId>
+            <artifactId>keycloak-spring-boot-starter</artifactId>
+            <version>22.0.1</version>
+        </dependency>
+```
+et il faut ajouter quelque configuration dans le fichier ```application.properties```:
+```properties
+keycloak.realm=wallet-realm
+keycloak.resource=wallet-client
+keycloak.bearer-only=true
+keycloak.auth-server-url=http://Localhost:8080
+keycloak.ssl-required=none
+```
+
+Dans realm setting, nous modifions ssl required et on select none
+
+![keycloak](imgs/img24.JPG)
+
+Dans le service e-bank, nous avons ajouté un package security dans le quelle, nous avons ajouté deux classes.
+
+- keycloakAdapterConfig.java
+- SecurityConfig
+
+Sur Postman, on envoie une nouvelle request pour obtenu le nouvel access token.
+
+![keycloak](imgs/img25.JPG)
+
+Qui va etre utiliser pour envoyer des requests.
+
+Pour le côté front-end, avant de security, on trouve notre interface comme suivant :
+
+![front-end](imgs/img26.JPG)
+
+![front-end](imgs/img27.JPG)
+
+Pour security l'application front-end, il y a quelque etape à suivre.
+Installation des dependencies :
+```shell
+npm install keycloak-angular keycloak-js --force
+```
+Dans ```app.module.ts```, importer ```KeycloakAngularModule``` et ajoute la fonction suivante :
+
+```ts
+export function kcFactory(kcService : KeycloakService){
+    return ()=>{
+        kcService.init({
+            config: {
+                url: 'http://localhost:8080',
+                realm: 'wallet-realm',
+                clientId: 'wallet-client'
+            },
+            initOptions: {
+                onLoad: 'login-required',
+                checkLoginIframe: true
+            },
+        })
+    }
+}
+...
+providers: [
+    {provide : APP_INITIALIZER, deps : [KeycloakService],useFactory : kcFactory, multi : true}
+],
+```
+
+dans ```security.guard.ts``` nous avons ajouté la configuration suivante :
+
+```ts
+import { Injectable } from '@angular/core';
+import {
+  ActivatedRouteSnapshot,
+  Router,
+  RouterStateSnapshot
+} from '@angular/router';
+import { KeycloakAuthGuard, KeycloakService } from 'keycloak-angular';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthGuard extends KeycloakAuthGuard {
+  constructor(
+    protected override readonly router: Router,
+    protected readonly keycloak: KeycloakService
+  ) {
+    super(router, keycloak);
+  }
+
+  public async isAccessAllowed(
+    route: ActivatedRouteSnapshot,
+    state: RouterStateSnapshot
+  ) {
+    // Force the user to log in if currently unauthenticated.
+    if (!this.authenticated) {
+      await this.keycloak.login({
+        redirectUri: window.location.origin
+      });
+    }
+
+    // Get the roles required from the route.
+    const requiredRoles = route.data['roles'];
+
+    // Allow the user to proceed if no additional roles are required to access the route.
+    if (!Array.isArray(requiredRoles) || requiredRoles.length === 0) {
+      return true;
+    }
+
+    // Allow the user to proceed if all the required roles are present.
+    return requiredRoles.every((role) => this.roles.includes(role));
+  }
+}
+```
+
+Dans ```security.service.ts```, nous avons ajouter le code suivant :
+```ts
+import {Injectable} from "@angular/core";
+import {KeycloakProfile} from "keycloak-js";
+import {KeycloakEventType, KeycloakService} from "keycloak-angular";
+
+@Injectable({providedIn : "root"})
+export class SecurityService {
+
+  public profile? : KeycloakProfile;
+  constructor (public kcService: KeycloakService) {
+
+    this.init();
+
+  }
+
+  init(){
+
+    this.kcService.keycloakEvents$.subscribe({
+
+      next: (e) => {
+
+        if (e.type == KeycloakEventType.OnAuthSuccess) {
+          this.kcService.loadUserProfile().then(profile=>{
+            this.profile=profile;
+
+          });
+
+        }
+
+      }
+
+    });
+
+  }
+
+  public hasRoleln(roles:string[]):boolean{
+    let userRoles = this.kcService.getUserRoles();
+
+    for(let role of roles){
+
+      if (userRoles.includes(role)) return true;
+    } return false;
+
+  }
+
+}
+```
+dans ```navbar.component.html``` nous avons ajouter le firstname de l'utilisateur authentifié.
+```html
+<a class="nav-link" *ngIf="securityService.profile; else loginTemplate">
+    <a>{{securityService.profile.firstName}}</a>
+</a>
+```
+
+Et dans ```navbar.component.ts```, nous avons ajouté la configuration suivante :
+
+```ts
+constructor(public securityService:SecurityService) { }
+...
+onLogout() {
+    this.securityService.kcService.logout(window.location.origin);
+}
+...
+async login(){
+    await this.securityService.kcService.login({
+        redirectUri : window.location.origin
+    })
+}
+```
+Vers la fin, notre application besoin d'une authentification pour accede a les autres fonctions.
+
+![authentification](imgs/img28.JPG)
