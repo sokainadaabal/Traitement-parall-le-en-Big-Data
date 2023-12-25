@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Keynote-service-sd" />
+        <module name="conference-services-sd" />
+        <module name="config-service-sd" />
+        <module name="gateway-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="config-file" target="1.7" />
+      <module name="config-repo-file" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Keynote-service-sd" options="-parameters" />
+      <module name="conference-services-sd" options="-parameters" />
+      <module name="config-service-sd" options="-parameters" />
+      <module name="gateway-service" options="-parameters" />
+    </option>
+  </component>
+</project>
